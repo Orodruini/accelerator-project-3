@@ -1,0 +1,36 @@
+.main-header {
+  background-color: #f0efe9;
+}
+
+.main-header__img {
+  margin-top: 1px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
+}
+
+.main-header__promo {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 15px;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 290px;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+    left: 45px;
+
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 100px;
+
+    width: 1240px;
+  }
+}

@@ -1,0 +1,154 @@
+.social {
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 98px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 128px;
+
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 148px;
+    margin-top: 8px;
+
+    gap: 20px;
+  }
+}
+
+.social__link {
+  position: relative;
+
+  display: block;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+  background-color: #316dc2;
+
+  @media (min-width: $tablet-width) {
+    width: 36px;
+    height: 36px;
+  }
+
+
+  &::after {
+    content: "";
+
+    background-color: #ffffff;
+
+    @include pseudo;
+  }
+
+  &:hover {
+    &::after {
+      background-color: #f0efe9;
+    }
+  }
+
+  &:focus {
+    background-color: #ffffff;
+
+    &::after {
+      background-color: #316dc2;
+    }
+  }
+
+  &:active {
+    background-color: #275699;
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.social__link--vk {
+  &::after {
+    top: 9px;
+    left: 6px;
+
+    width: 13px;
+    height: 7px;
+
+    mask-size: 13px 7px;
+    mask-image: url("/__spritemap#sprite-vk-view");
+
+    @media (min-width: $tablet-width) {
+      top: 12px;
+      left: 10px;
+
+      width: 16px;
+      height: 9px;
+
+      mask-size: 16px 9px;
+    }
+  }
+}
+
+.social__link--ok {
+  &::after {
+    top: 7px;
+    left: 3px;
+
+    width: 20px;
+    height: 12px;
+
+    mask-size: 20px 12px;
+    mask-image: url("/__spritemap#sprite-ok-view");
+
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 13px;
+
+      width: 9px;
+      height: 16px;
+
+      mask-size: 9px 16px;
+    }
+  }
+}
+
+.social__link--red {
+  &::after {
+    top: 8px;
+    left: 5px;
+
+    width: 15px;
+    height: 10px;
+
+    mask-size: 15px 10px;
+    mask-image: url("/__spritemap#sprite-reddit-view");
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      left: 11px;
+
+      width: 14px;
+      height: 15px;
+
+      mask-size: 14px 15px;
+    }
+  }
+}

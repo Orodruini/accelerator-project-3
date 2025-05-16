@@ -1,4 +1,30 @@
-// Vendor
-// ---------------------------------
+/* GLOBAL */
 
-@import "vendor/normalize";
+@import "./common/fonts";
+@import "./common/variables";
+@import "./common/visually-hidden";
+@import "./common/mixins";
+
+/* BLOCKS */
+@import "./blocks/nav";
+@import "./blocks/main-header";
+@import "./blocks/program";
+@import "./blocks/programs";
+@import "./blocks/about";
+@import "./blocks/about-project";
+@import "./blocks/target";
+@import "./blocks/advantages";
+@import "./blocks/modal";
+@import "./blocks/modal-list";
+@import "./blocks/page";
+@import "./blocks/grant";
+@import "./blocks/go";
+@import "./blocks/faq";
+@import "./blocks/reviews";
+@import "./blocks/slide-reviews";
+@import "./blocks/form";
+@import "./blocks/form-list";
+@import "./blocks/conditions";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+@import "./blocks/social";

@@ -1,0 +1,179 @@
+.advantages {
+  padding: 42px 20px 40px;
+
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: #316dc2;
+
+  @media (min-width: $tablet-width) {
+    padding: 72px 50px 50px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 100px 50px 120px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+
+  color: #f0efe9;
+
+  @include reset-list;
+
+  gap: 22px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 54px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
+}
+
+.advantages__item {
+  position: relative;
+
+  padding: 15px 21px 16px;
+
+  border: 1px solid #f0efe9;
+  border-radius: 16px;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 253px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 484px;
+    padding: 50px 41px;
+    padding-bottom: 29px;
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $desktop-width) {
+      padding-top: 31px;
+
+      h3 {
+        margin: 0;
+        margin-top: 19px;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      h3 {
+        width: 126px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      h3 {
+        width: 162px;
+        margin: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      padding-top: 40px;
+
+      h3 {
+        margin: 0;
+      }
+    }
+
+    br {
+      display: block;
+    }
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -22px;
+    left: -20px;
+
+    display: block;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    background: #316dc2 url("../../__spritemap#sprite-star-view.svg") no-repeat center;
+    background-size: 44px 254px;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 14px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -0.6px;
+
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 201px;
+
+      font-size: 26px;
+      line-height: 30px;
+
+      text-align: left;
+    }
+  }
+
+  p {
+    margin: 0;
+    margin-left: -1px;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 201px;
+    }
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}

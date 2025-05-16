@@ -1,0 +1,102 @@
+.nav {
+  display: block;
+}
+
+.nav__button {
+  box-sizing: border-box;
+  width: 136px;
+  padding: 18px 71px 20px 20px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+
+  text-transform: uppercase;
+
+  color: #316dc2;
+  border: 1px solid rgb(49, 109, 194);
+  border-radius: 30px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  &::after {
+    top: 4px;
+    right: 5px;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+    background-color: #316dc2;
+
+    @include pseudo;
+
+    @media (min-width: $tablet-width) {
+      top: 5px;
+    }
+  }
+
+  &::before {
+    z-index: 2;
+    top: 23px;
+    right: 19px;
+
+    display: block;
+
+    width: 17px;
+    height: 8px;
+
+    background-color: #ffffff;
+
+    mask-size: 17px 8px;
+    mask-image: url("/__spritemap#sprite-burger-view");
+
+    @include pseudo;
+
+    @media (min-width: $tablet-width) {
+      top: 24px;
+    }
+  }
+}
+
+.nav__list {
+  display: none;
+
+  @include reset-list;
+
+  ul {
+    @include reset-list;
+  }
+}
+
+.main-header__link--sublist {
+  position: relative;
+
+  padding-right: 27px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: 5px;
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    transition: all 0.3s ease;
+    transform: translateY(-50%);
+
+    opacity: 0.7;
+    background-color: #ffffff;
+
+    mask-image: url("/__spritemap#sprite-arrow-city-view");
+    mask-size: 12px 12px;
+    mask-repeat: no-repeat;
+  }
+}

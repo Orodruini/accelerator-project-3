@@ -1,0 +1,47 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin wrapper-mobile {
+  width: 290px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin wrapper-tablet {
+  width: 678px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin wrapper-desktop {
+  width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+
+  position: $pos;
+
+  display: $display;
+}
+
+@mixin mobile-h {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@mixin tablet-h {
+  font-size: 34px;
+  line-height: 50px;
+}
+
+@mixin desktop-h {
+  font-size: 50px;
+}
